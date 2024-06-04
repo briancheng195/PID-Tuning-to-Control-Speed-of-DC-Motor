@@ -8,7 +8,7 @@ Implementation of PID controller to tune the speed of FIT0522 DC motor to a set 
 - No load Speed: 100RPM@0.13A
 - Maximum Efficiency Point: Load 1.0kgcm/80RPM/1.7W/0.5A
 - Maximum Power point: Load 3.0kgcm/55RPM/2.8W/1.0A
-- Stall Torque: 6.5kgꞏcm
+- Stall Torque: 6.5kgcm
 - Stall Current: 3.0A
 - Hall Resolution: Hall Resolution 11x Precision Reduction Ratio 74.83=823.1PPR Dimension: 54 * Φ24.4mm / 2.13 * Φ0.96inches
 - Weight: 96g
@@ -106,7 +106,8 @@ Implementation of PID controller to tune the speed of FIT0522 DC motor to a set 
 
 # PID-Controller
 # Kp = 0.1, Ki = 0.006 and Kd = 0.01
-- With the values of Kp, Ki and Kd set, the system output showed that the speed of the motor was hovering close to the target speed, as its range is from 1374 rpm to 1440 rpm. The   output PWM was also relatively stable
+- With the values of Kp, Ki and Kd set, the system output showed that the speed of the motor was hovering close to the target speed, as its range is from 1374 rpm to 1440 rpm.   
+  The output PWM was also relatively stable
 - However, the speed of the motor and its output PWM does fluctuate more as it has a larger range, as compared to the results from the PI controller with Kp = 0.1 and Ki = 0.006. 
 
 <img width="800" alt="image" src="https://github.com/briancheng195/PID-Tuning-to-Control-Speed-of-DC-Motor/assets/122734373/d3de4c91-fd91-45de-9b60-f22340392be7">
