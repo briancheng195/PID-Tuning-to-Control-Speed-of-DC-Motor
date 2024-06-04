@@ -1,5 +1,6 @@
 # PID-Tuning-to-Control-Speed-of-DC-Motor
-Implementation of PID controller to tune the speed of FIT0522 DC motor to a set target speed of 1400rpm
+- Implementation of PID controller to tune the speed of FIT0522 DC motor to a set target speed of 1400rpm
+- MotorControlOL.ino file contains the open loop and closed loop speed measurement of the DC motor with implementation of PID controller (for closed loop)
 
 # Specifications of FIT0522 DC Motor
 - Motor Rated Voltage: 6V
