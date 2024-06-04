@@ -18,8 +18,8 @@
 - The speed sensing of the motor can be conducted as the motor’s rotational speed can be measured with the aid of its incremental encoder
 - The incremental encoder provides pulse signals as the motor’s shaft rotates
 - For providing speed feedback, one of the encoder pins (Encoder A phase) of the motor is connected to the interrupt pin of the Arduino microcontroller. This establishes the 
-  connection with one of the hall effect sensors of the motor and its incremental encoder. There is a disk mounted on the shaft of the motor and the disk would 
-  spin as the motor shaft rotates
+  connection with one of the hall effect sensors of the motor and its incremental encoder. There is a disk mounted on the shaft of the motor and the disk would spin as the motor 
+  shaft rotates
 - There are magnets within the disk and as the disk spins, this would cause changes in the magnetic field and it is detected by the hall effect sensor. Due to the change in the   
   magnetic field, the hall effect sensor creates electric signals in the form of a square wave which can be displayed on the Arduino serial monitor
 - The incremental encoder would generate pulses as the disk spins and these pulses are accounted for so as to measure the speed of the motor. This is done by multiplying the      
@@ -51,7 +51,7 @@
 - To reduce the noise of the motor, a moving average filter is applied
 - For example, the code takes in the latest 5 measured speed values (1st to 5th measured speed values) and calculates the average. Afterwards, once the 6th measured speed value 
   is taken in, the oldest measured speed reading is removed from the array and the latest measured speed reading is added into the array. The average is calculated again and the 
-  process repeats so forth. 
+  process repeats so forth
 
 # Control Loop Speed Control of FIT0522 DC Motor
 - The purpose of implementing a PID controller is to regulate the speed of the motor so that it is able to drive towards its target speed
