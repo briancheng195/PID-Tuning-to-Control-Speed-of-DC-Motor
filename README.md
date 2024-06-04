@@ -34,6 +34,10 @@
 # Electronics Design 
 <img width="500" alt="image" src="https://github.com/briancheng195/PID-Tuning-to-Control-Speed-of-DC-Motor/assets/122734373/ce9ed260-e928-4dfa-9b2c-8b4b848513a7">
 
+# Speed Measurement of FIT0522 DC Motor
+- A timer interrupt function is created for a time interval of 100ms and during each time interval, the speed of the motor is measured and recorded. Firstly, to set up the timer 
+  interrupt at every 100ms, a timer preload value of 59286 is keyed
+  
 # Open Loop Speed Control of FIT0522 DC Motor
 - Speed Measurement at Steady State of DC Motor ranges from 2563rpm to 2618rpm when PWM of DC Motor is set to a maximum value of 255
 
@@ -49,9 +53,8 @@
 
 # Implementation of Moving Average Filter
 - To reduce the noise of the motor, a moving average filter is applied
-- For example, the code takes in the latest 5 measured speed values (1st to 5th measured speed values) and calculates the average. Afterwards, once the 6th measured speed value 
-  is taken in, the oldest measured speed reading is removed from the array and the latest measured speed reading is added into the array. The average is calculated again and the 
-  process repeats so forth
+- For example, the code takes in the latest 5 measured speed values (1st to 5th measured speed values) and calculates the average at every 100ms time interval. Afterwards, once
+  the 6th measured speed value is taken in, the oldest measured speed reading is removed from the array and the latest measured speed reading is added into the array. The average   is calculated again and the process repeats so forth
 
 # Control Loop Speed Control of FIT0522 DC Motor
 - The purpose of implementing a PID controller is to regulate the speed of the motor so that it is able to drive towards its target speed
